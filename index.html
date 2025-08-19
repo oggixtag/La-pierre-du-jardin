@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La pierre du jardin - entreprise entretien '\éspaces vert</title>
-  </head>
-  <body>
-    <menu>
-      <img src="img/LP.JPG" alt="" srcset="" width="75" height="73" />
-      <a href="index.html">Acceil</a>
-      <a href="index.html">Aménagement jardin et espaces verts</a>
-      <a href="index.html">Aménagement extérieur</a>
-      <a href="index.html">Réalisation</a>
-      <a href="index.html">Blog</a>
-      <a href="index.html">Contact</a>
-    </menu>
-    <main>
-      <h1>Bienvenu dans le site de l'entreprise La pierre du jardin</h1>
-    </main>
-    <footer>
-      <img src="img/LP - tél.JPG" alt="" srcset="" />06.70.75.65.66
-      <img src="img/lp - rdv.JPG" alt="" srcset="" />95 rue grande 87410
-      Palais-sur-Vienne
-      <img src="img/lp - horaires.JPG" alt="" srcset="" />lundi au vendredi de
-      8h00 à 19h00
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>La pierre du jardin - entreprise entretien '\éspaces vert</title>
+		<link rel="stylesheet" href="cssLaPierreDuJardin.css">
+	</head>
+	<body>
+		<header>
+			<table> 
+				<tr>
+				  <td class="tdLogo">
+					<!-- Logo -->
+					<img class="imgLogo" src="img/LP.JPG" alt="Logo la pierre du jardin" />
+				  </td>
+				  <td>
+					<!-- <nav aria-label="Menu principal"> -->
+						<!-- <object class="objMenu" data="menu.html" type="text/html" ></object>  -->
+					<!-- </nav> -->
+					
+					<nav aria-label="Menu principal">
+	<ul>
+	  <li><a href="#">Acceil</a></li>
+	  <li class="deroulant">
+		<a href="#">Jardin et espaces verts</a>
+		<ul class="sous">
+		  <li><a href="#">Création et aménagement d’espaces verts</a></li>
+		  <li><a href="#">Entretien de jardin</a></li>
+		</ul>
+	  </li>
+	  <li class="deroulant">
+		<a href="#">Aménagement extérieur</a>
+		<ul class="sous">
+		  <li><a href="#">Maçonnerie paysagère</a></li>
+		  <li><a href="#">Aménagement de terrasse</a></li>
+		  <li><a href="#">Pose de clôtures et portails</a></li>
+		</ul>
+	  </li>
+	  <li><a href="#">Réalisation</a></li>
+	  <li><a href="#">Blog</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+					
+				  </td>
+				</tr>
+			</table
+		</header>
+		<main  role="main">
+		  <h1>Bienvenu dans le site de l'entreprise La pierre du jardin</h1>
+		</main>
+		<!-- <footer> -->
+			<object class="objFooter" data="footer.html" type="text/html" ></object> 
+		<!-- </footer> -->
+	</body>
 </html>
