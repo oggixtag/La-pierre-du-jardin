@@ -1,21 +1,4 @@
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
@@ -25,20 +8,17 @@
 	</head>
 	<body>
 		<header>
-			<table> 
-				<tr>
-				  <td class="tdLogo">
+			<table class="classTable" id="tableMenu"> 
+				<tr id="trMenu">
+				  <td id="tdLogo">
 					<!-- Logo -->
-					<img class="imgLogo" src="img/LP.JPG" alt="Logo la pierre du jardin" />
+					<img id="imgLogo" src="img/LP.JPG" alt="Logo la pierre du jardin" />
 				  </td>
-				  <td>
-					<!-- <nav aria-label="Menu principal"> -->
-						<!-- <object class="objMenu" data="menu.html" type="text/html" ></object>  -->
-					<!-- </nav> -->
-					
+				  <td>				
 					<nav aria-label="Menu principal">
+					<!-- <object class="objMenu" data="menu.html" type="text/html" ></object>  -->
 						<ul>
-						  <li><a href="#">Acceil</a></li>
+						  <li><a href="index.html">Acceil</a></li>
 						  <li class="deroulant">
 							<a href="#">Jardin et espaces verts</a>
 							<ul class="sous">
@@ -59,62 +39,60 @@
 						  <li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
-					
 				  </td>
 				</tr>
 			</table
 		</header>
     <main role="main">
-	
-	<table id="tableContact">
-		<tr>
-			<td>
-				<h1>Contactez-nous</h1>
-			</td>
-			<td>
-				<h1>Services paysagiste</h1>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					Pour plus d'information concernant les services proposés par
-					l'entreprise La pierre du jardin envoyer un mail à l'administration en
-					clicant sur le lien ci-dessous,
-				</p>
-				<p>
-					<a href="mailto:info@lapierredujardin.fr?subjet=Services">envoyer un mail</a>
-				</p>
-				<p>
-					Je suis intéressé, je prends un rdv avec Pierre, pierre@lapirredujardin.fr
-				</p>
-				<p>
-					Droit d’image, écrivez au service droitdimage@lapierredujardin.fr
-				</p>
-				<p>
-					Si vous rencontrez un problème technique en navigant sur le site La
-					pierre du jardin, écrivez au webmaster@lapierredujardin.fr
-				</p>
-			</td>
-			<td>
-				<!-- <h1>Services paysagiste</h1> -->
-				<div>95 rue grande 87410 Palais-sur-Vienne</div>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.843673981473!2d1.331873576558053!3d45.87443710597338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f936738220935f%3A0xbdd8248832094d88!2s95%20Rue%20Pierre%20Mend%C3%A8s%20France%2C%2087410%20Le%20Palais-sur-Vienne!5e0!3m2!1sit!2sfr!4v1755056904663!5m2!1sit!2sfr"
-					width="600"
-					height="450"
-					style="border: 0"
-					allowfullscreen=""
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
-			</td>
-		</tr>
-	</table>	
+		<table class="classTable" id="tableContact">	
+			<thead>
+				<tr>
+					<th><h1>Contactez-nous</h1></th>
+					<th><h1>Services paysagiste</h1></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="tdContactInfo">
+						<p class="pInfoContact">
+							Pour plus d'information concernant les services proposés par
+							l'entreprise La pierre du jardin envoyer un mail à l'administration en
+							clicant sur le lien ci-dessous,
+							<a href="mailto:info@lapierredujardin.fr?subjet=info services">envoyer un mail</a>
+						</p>
+						<p class="pInfoContact">
+							Je suis intéressé, je prends un rdv avec Pierre, 
+							<a href="mailto:pierre@lapirredujardin.fr?subjet=Je prends rdv">envoyer un mail</a>
+						</p>
+						<p class="pInfoContact"> 
+							Droit d’image, écrivez au service 
+							<a href="mailto:droitdimage@lapierredujardin.fr?subjet=Droit d’image">envoyer un mail</a>
+						</p> 
+						<p class="pInfoContact">  
+							Si vous rencontrez un problème technique en navigant sur le site La
+							pierre du jardin, écrivez au 
+							<a href="mailto:webmaster@lapierredujardin.fr?Problème technique">envoyer un mail</a>
+						</p>
+					</td>
+					<td id="tdContactMap">
+						<!-- <h1>Services paysagiste</h1> -->
+						<p class="pInfoContact">95 rue grande 87410 Palais-sur-Vienne</p>
+						<iframe
+							class="pInfoContact"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.843673981473!2d1.331873576558053!3d45.87443710597338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f936738220935f%3A0xbdd8248832094d88!2s95%20Rue%20Pierre%20Mend%C3%A8s%20France%2C%2087410%20Le%20Palais-sur-Vienne!5e0!3m2!1sit!2sfr!4v1755056904663!5m2!1sit!2sfr"
+							width="600"
+							height="450"
+							style="border: 1"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</td>
+				</tr>
+			</tbody>
+		</table>	
 	</main>
-		<!-- <footer> -->
-			<object class="objFooter" data="footer.html" type="text/html" ></object> 
-		<!-- </footer> -->
+		<!-- Footer -->
+		<object class="objFooter" data="footer.html" type="text/html" ></object> 
 	</body>
 </html>
-

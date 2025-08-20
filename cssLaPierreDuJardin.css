@@ -54,45 +54,58 @@ nav a:hover {
   width: 100%;
   z-index: 1000;
 }
+
 nav > ul li:hover .sous {
   display: block;
 }
+
 .sous li {
   float: none;
   width: 100%;
   text-align: left;
 }
+
 .sous a {
   padding: 10px;
   border-bottom: none;
 }
+
 .sous a:hover {
   border-bottom: none;
   background-color: RGBa(200, 200, 200, 0.1);
 }
+
 .deroulant > a::after {
   content: " ▼";
   font-size: 12px;
 }
-table {
+
+.classTable {
   width: 100%;
+}
+
+#tableMenu {
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
 }
-tr {
+
+#trMenu {
   vertical-align: top;
 }
-td {
-  border: 1px solid rgb(190, 190, 190);
-}
 
-.tdLogo {
+#tdLogo {
   width: 8%;
+  border: 2px solid rgb(190, 190, 190);
 }
 
-.imgLogo {
+#imgLogo {
   width: 85px;
   height: 83px;
+}
+
+.tdFooter {
+  width: 33%;
+  vertical-align: top;
 }
 
 .imgFooter {
@@ -100,15 +113,44 @@ td {
   height: 36px;
 }
 
-.objMenu {
-  width: 100%;
-}
-
 .objFooter {
   width: 100%;
   height: 63px;
 }
 
+.divFooter {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid rgb(200, 200, 200);
+  text-align: left;
+  vertical-align: top;
+  display: inline;
+}
+
+.objMenu {
+  width: 100%;
+}
+
 #tableContact {
   border: 2px solid rgb(200, 200, 200);
+}
+
+#tdContactInfo {
+  width: 40%;
+  /* text-align: center; */
+  vertical-align: top;
+}
+
+#tdContactMap {
+  width: 60%;
+  vertical-align: top;
+}
+
+.pInfoContact {
+  /* width: 95%; */
+  /* height: 95%; */
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgb(200, 200, 200);
+  text-align: justify;
 }
