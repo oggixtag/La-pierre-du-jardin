@@ -3,200 +3,217 @@
 * Logo
 * Nav
 * Content
-* p.Footer
 * p.Index
 */
 
 /* --------------------------------------------	Reset CSS */
 
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
 }
 
 /* --------------------------------------------	Logo */
 
-#tdLogo {
-  width: 5%;
-  text-align: center;
-  /* background-color: rgb(214, 214, 214); */
+#tdLogo{
+	width:5%;
+	text-align:center;
+	/* background-color: rgb(214, 214, 214); */
 }
 
-#imgLogo {
-  width: 100px;
-  height: 120px;
-  padding: 16px 5px 0px 5px;
-  margin: 16px 5px 0px 5px;
-  /* border: 2px solid red; */ /*for debug*/
+#imgLogo{
+	width:100px;
+	height:120px;
+	padding: 16px 5px 0px 5px;
+	margin: 16px 5px 0px 5px;
+	/* border: 2px solid red; */ /*for debug*/
 }
 
 /* --------------------------------------------	Nav */
 
-nav {
-  background-color: rgb(214, 214, 214);
-  font-size: small;
-  padding: 0px 0px 5px 0px;
-  margin: 0px 0px 5px 0px;
-  /* border: 2px solid red; */ /*for debug*/
+nav{
+    background-color: rgb(214, 214, 214);
+	font-size:small;
+	padding: 0px 0px 5px 0px;
+	margin: 0px 0px 5px 0px;
+	/* border: 2px solid red; */ /*for debug*/
 }
 
 /*suppression points en tete de ligne*/
-nav ul {
-  list-style-type: none;
-  width: 100%;
+nav ul{
+    list-style-type: none;
+	width: 100%;
 }
 
-ul li {
-  float: left;
-  width: 16%;
-  text-align: center;
-  position: relative;
+ ul li{
+	float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
 }
 
-nav ul::after {
-  content: "";
-  display: table;
-  clear: both;
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
-nav a {
-  display: block;
-  text-decoration: none;
-  color: black;
-  border-bottom: 2px solid transparent;
-  padding: 5px 0px;
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 5px 0px;
 }
 
-nav a:hover {
-  color: orange;
-  border-bottom: 2px solid gold;
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
 }
 
-.sous {
-  display: none;
-  box-shadow: 0px 1px 2px #ccc;
-  background-color: rgb(148, 148, 148);
-  position: absolute;
-  width: 100%;
-  z-index: 1000;
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: rgb(148, 148, 148);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
 }
 
-nav > ul li:hover .sous {
-  display: block;
+nav > ul li:hover .sous{
+    display: block;
 }
 
-.sous li {
-  float: none;
-  width: 100%;
-  text-align: left;
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
 }
 
-.sous a {
-  padding: 10px;
-  border-bottom: none;
+.sous a{
+    padding: 10px;
+    border-bottom: none;
 }
 
-.sous a:hover {
-  border-bottom: none;
-  background-color: RGBa(200, 200, 200, 0.1);
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
 }
 
-.deroulant > a::after {
-  content: " ▼";
-  font-size: 12px;
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
 }
 
 /* --------------------------------------------	Content */
 
+body {
+  /* width: 90%; */
+  /* max-width: 900px; */
+  /* margin: 0 auto; */
+  font:
+    0.9em/1.2 Arial,
+    Helvetica,
+    sans-serif;
+}
+
 .classTable {
-  width: 100%;
-  border-collapse: collapse;
+	width: 100%;
+	border-collapse: collapse;
 }
 
-.box {
-  padding: 5px;
-  margin: 5px;
-  border: 2px solid rgb(200, 200, 200);
+.box{
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid rgb(200,200,200);
 }
 
-.boxDebug {
-  padding: 5px 5px 5px 5px;
-  margin: 5px 5px 5px 5px;
-  border: 2px solid red;
+.classBboxDebug{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+	border: 2px solid red;
 }
 
-.boxMarginOnly {
-  padding: 0px;
-  margin: 5px;
-  border: 0px solid rgb(200, 200, 200);
+#IdBoxDebug{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px; 
+	border: 2px solid red;
+}
+	
+.boxMarginOnly{ 
+	padding: 0px;
+	margin: 5px;
+	border: 0px solid rgb(200,200,200);
 }
 
-.boxBorderOnly {
-  border: 1px solid green;
+.boxBorderOnly{
+	border: 1px solid green;
 }
 
-.text_align_justify {
-  text-align: justify;
+.text_align_justify{
+	text-align:justify;
 }
 
-.text_align_right {
-  text-align: right;
+.text_align_right{
+	text-align:right;
 }
 
-.text_align_left {
-  text-align: left;
+.text_align_left{
+	text-align:left;
 }
 
 .text_align_center {
-  text-align: center;
+	text-align:center;
 }
 
-.text_align_right {
-  text-align: right;
+.text_align_right{
+	text-align:right;
 }
 
-.vertical_align_top {
-  vertical-align: top;
+.vertical_align_top{
+	vertical-align: top;
 }
 
-.tdW33 {
-  width: 33%;
+.tdW33{
+	width:33%;
 }
 
-.tdW50 {
-  width: 50%;
+.tdW50{
+	width:50%;
 }
 
-/* --------------------------------------------	p.Footer */
-
-.divFooter {
-  display: inline;
+#spanBienvenu {
+  background: red;
+  border: 1px solid black;
 }
 
-.imgFooter {
-  width: 36px;
-  height: 36px;
+.backgroundWhite {
+	background: white;
 }
 
+.displayInline{
+	display:inline;
+}
+	
 /* --------------------------------------------	p.Index */
 
-#imgIndexGrande {
-  max-width: 100%;
-  height: auto;
+#imgIndexGrande{
+	max-width: 100%;
+	height: auto;
 }
 
-.objFooter {
-  width: 100%;
-  height: 63px;
+.objFooter{
+	width:100%;
+	height:63px;
 }
 
-.button-overlay {
+.button-overlay{
   position: relative;
   display: inline-block;
 }
 
-.button-overlay button {
+.button-overlay button{
   position: absolute;
   top: 50%;
   left: 90%;
@@ -204,11 +221,83 @@ nav > ul li:hover .sous {
   padding: 15px 30px;
   /* background-color: #FFA500; */
   background-color: transparent;
-  color: #000000;
+  color:#000000;
   border-radius: 55px;
   font-size: 2.5em;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
-.button-overlay button:hover {
+.button-overlay button:hover{
   background-color: rgb(148, 148, 148);
+}
+
+/* --------------------------------------------	 floating box  */
+
+#boxSpecial{
+}
+
+.boxFloating{
+	float: left;
+	padding: 1em;
+	margin: 10px 10px 5px 20px;
+	border: 2px solid rgb(200,200,200);
+	width: 210px;
+	height: 350px;
+	border-radius: 5px;
+	background: url(mockups/result_pexels-harry-cooke-6195012.jpg) center;
+}
+
+/* --------------------------------------------	 flex  */
+
+.pArticle{
+	padding: 5px 0px 0px 0px;
+	color: #333; /* Couleur du texte */
+	/* font-family: Arial, sans-serif; /* Police de caractères */ */
+	/* font-size: 18px; /* Taille du texte */ */
+	line-height: 1.5; /* Hauteur de ligne */
+	text-align: justify; /* Alignement du texte (gauche, centre, droite, justifié) */
+	/* margin-bottom: 20px; /* Marge sous le paragraphe */ */
+}
+
+section{
+	display: flex;
+	flex-direction: row;
+}
+
+sectionAmenagementJardin{
+	display: flex;
+	flex-direction: row;
+}
+
+article{
+	flex: 1;
+	padding: 10px;
+	margin: 10px;
+	/* background: aqua; */
+	flex-grow:3; 
+}
+
+#boxArticle1{
+	padding: 5px 0px 5px 0px ;
+	margin: 5px 5px 5px 0px ;
+	border: 2px solid rgb(200,200,200);
+}
+
+#conteneur{
+	display: flex ;
+	padding:5px;
+	margin:5px;
+	/* border:2px solid red; */
+	gap: 5px;	/*pour espacer les éléments*/
+	/* height: 100vh; */
+	flex-direction: row;
+	/* flex-wrap: wrap; /*les éléments se retrouvent à la ligne quand il n'y a plus de place sur la ligne actuelle*/ */ */
+	/* flex-flow: row wrap; */
+}
+
+.enfant {
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  border:2px solid rgb(200,200,200);
+  align-items:stretch;
 }
