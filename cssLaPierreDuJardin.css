@@ -4,6 +4,9 @@
 * Nav
 * Content
 * p.Index
+* floating box
+* flex
+* p.Realisation
 */
 
 /* --------------------------------------------	Reset CSS */
@@ -121,6 +124,7 @@ body {
 .classTable {
 	width: 100%;
 	border-collapse: collapse;
+	/* margin:5px 0px 0px 0px; */
 }
 
 .box{
@@ -149,6 +153,11 @@ body {
 
 .boxBorderOnly{
 	border: 1px solid green;
+}
+
+.boxNoBorder{
+	padding: 5px;
+	margin: 5px;
 }
 
 .text_align_justify{
@@ -184,8 +193,8 @@ body {
 }
 
 #spanBienvenu {
-  background: red;
-  border: 1px solid black;
+	background: red;
+	border: 1px solid black;
 }
 
 .backgroundWhite {
@@ -213,22 +222,22 @@ body {
   display: inline-block;
 }
 
-.button-overlay button{
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  padding: 15px 30px;
-  /* background-color: #FFA500; */
-  background-color: transparent;
-  color:#000000;
-  border-radius: 55px;
-  font-size: 2.5em;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-}
-.button-overlay button:hover{
-  background-color: rgb(148, 148, 148);
-}
+/* .button-overlay button{ */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 90%; */
+  /* transform: translate(-50%, -50%); */
+  /* padding: 15px 30px; */
+  /* /* background-color: #FFA500; */ */
+  /* background-color: transparent; */
+  /* color:#000000; */
+  /* border-radius: 55px; */
+  /* font-size: 2.5em; */
+  /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); */
+/* } */
+/* .button-overlay button:hover{ */
+  /* background-color: rgb(148, 148, 148); */
+/* } */
 
 /* --------------------------------------------	 floating box  */
 
@@ -282,7 +291,7 @@ article{
 	border: 2px solid rgb(200,200,200);
 }
 
-#conteneur{
+#conteneur_jardin_espaces_verts_EntretienJardin{
 	display: flex ;
 	padding:5px;
 	margin:5px;
@@ -294,10 +303,110 @@ article{
 	/* flex-flow: row wrap; */
 }
 
-.enfant {
-  background-color: white;
-  padding: 20px;
-  border-radius: 50px;
-  border:2px solid rgb(200,200,200);
-  align-items:stretch;
+.enfant_jardin_espaces_verts_EntretienJardin {
+	background-color: white;
+	padding: 20px;
+	border-radius: 50px;
+	border:2px solid rgb(200,200,200);
+	align-items:stretch;
+}
+
+#conteneur_amenagement_exterieur{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+}
+
+.enfant_amenagement_exterieur {
+	padding: 5px ;
+	margin: 5px ;
+	border:2px solid red;
+	flex-basis:auto;
+}
+
+.pEnfant_amenagement_exterieur{
+	padding: 5px 0px 5px 0px ;
+	margin: 5px 0px 5px 0px ;
+	text-align:justify;
+}
+
+/* --------------------------------------------	 p.Realisation  */
+
+.conteneur_realisation {
+	list-style: none; /*suppression point en-tête de la list*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* padding: 5px; */
+	margin: 5px;
+	border: 2px solid rgb(200,200,200);
+}
+
+.enfant_realisation {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin: 1%;
+	position: relative;
+	background-repeat: no-repeat;	/*ça définit la façon dont les images utilisées en arrière-plan sont répétées. */
+	background-position: center center;
+	background-size: contain;	/*ça définit la taille des images d'arrière-plan pour l'élément.*/
+	box-shadow: #666 2px 2px 4px;
+}
+
+@media (min-width: 530px) {
+	.enfant_realisation {
+		width: 48%;
+	}
+}
+
+@media (min-width: 860px) {
+	.enfant_realisation {
+		width: 31.333%;
+	}
+}
+
+.enfant_realisation_lien {
+	display: block; /* pour que le lien prenne la taille de l'item */
+	width: 100%;
+	height: 100%;
+}
+
+.enfant_realisation_lien:link,
+.enfant_realisation_lien:visited {
+	color: #ccc;
+	transition: all .5s ease;
+}
+
+.enfant_realisation_lien:hover,
+.enfant_realisation_lien:active {
+	color: #fff; /* effet de changement de couleur du texte du lien au survol */
+	filter: brightness(1.3); /* effet d'éclaircissement du lien au survol */
+}
+
+.enfant_realisation_bloc {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	text-align: left;
+	padding: 10px;
+	transition: all .3s ease-out;
+	background: rgba(100, 100, 100, 0.4); /* semi-transparence de la couleur d'arrière-plan */
+}
+
+.enfant_realisation_lien:hover .enfant_realisation_bloc {
+	transform: translate(0,-30%); /* déplacement vertical du bloc titre au survol du lien */
+}
+
+.enfant_realisation_bloc_titre {
+	font-size: 1.1rem;
+}
+
+.enfant_realisation_bloc_desc {
+	font-size: .8rem;
+}
+
+.enfant_realisation_bloc_img {
+	width: 100%;
+	vertical-align: bottom;
 }
